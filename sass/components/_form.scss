@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
@@ -45,7 +48,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &__input:placeholder-shown+&__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
@@ -98,7 +101,7 @@
     }
   }
 
-  &__radio-input:checked + &__radio-label &__radio-button::after {
+  &__radio-input:checked+&__radio-label &__radio-button::after {
     opacity: 1;
   }
 }

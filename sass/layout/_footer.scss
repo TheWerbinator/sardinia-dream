@@ -1,8 +1,11 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .footer {
   background-color: $color-grey-dark-3;
   padding: 10rem 0;
   font-size: 1.4rem;
-  color: $color-grey-light-1;
+  color: $color-grey-light;
 
   @include respond(tab-port) {
     padding: 8rem 0;
@@ -46,9 +49,10 @@
   }
 
   &__link {
+
     &:link,
     &:visited {
-      color: $color-grey-light-1;
+      color: $color-grey-light;
       background-color: $color-grey-dark-3;
       text-decoration: none;
       text-transform: uppercase;
@@ -65,6 +69,9 @@
   }
 
   &__copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
     width: 80%;

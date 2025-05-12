@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .composition {
   position: relative;
 
@@ -59,7 +62,7 @@
 
   }
 
-  &:hover &__photo:not(:hover){
+  &:hover &__photo:not(:hover) {
     transform: scale(.95);
   }
 }

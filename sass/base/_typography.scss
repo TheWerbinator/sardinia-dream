@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -7,7 +10,7 @@ body {
 }
 
 .heading-primary {
-  color:$color-white;
+  color: $color-white;
   text-transform: uppercase;
 
   backface-visibility: hidden;
@@ -18,7 +21,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-  
+
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -28,14 +31,14 @@ body {
       font-size: 5rem;
     }
   }
-  
+
   &--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.74rem;
     animation-name: moveInRight;
-    
+
     @include respond(phone) {
       letter-spacing: .5rem;
     }
@@ -76,7 +79,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
-  
+
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

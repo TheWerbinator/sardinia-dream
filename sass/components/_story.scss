@@ -1,8 +1,11 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .story {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, $alpha: 0.1);
-  background-color: rgba($color-white, $alpha: 0.6);
+  background-color: rgba($color-grey-dark, $alpha: 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -43,12 +46,13 @@
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s;
   }
 
   &__text {
+    color: $color-white;
     transform: skewX(12deg);
 
     @include respond(phone) {
@@ -76,7 +80,7 @@
   }
 
   &:hover &__img {
-    transform: translateX(-4rem) scale(1);
+    transform: translateZ(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
   }
 }

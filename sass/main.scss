@@ -1,25 +1,26 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/variables";
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "base/animations";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
 
-@import "components/bg-video";
-@import "components/book";
-@import "components/button";
-@import "components/card";
-@import "components/composition";
-@import "components/feature-box";
-@import "components/form";
-@import "components/popup";
-@import "components/story";
+@use "components/bg-video";
+@use "components/book";
+@use "components/button";
+@use "components/card";
+@use "components/composition";
+@use "components/feature-box";
+@use "components/form";
+@use "components/map";
+@use "components/popup";
+@use "components/story";
 
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/navigation";
 
-@import "pages/home";
+@use "pages/home";

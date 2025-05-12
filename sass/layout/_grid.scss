@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .row {
   max-width: $grid-width;
   margin: 0 auto;
@@ -11,7 +14,7 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
-      
+
     @include respond(tab-port) {
       margin-bottom: $gutter-vertical-small;
     }
