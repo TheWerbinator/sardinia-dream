@@ -13,17 +13,27 @@
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)),
-    url(../img/services-bg.jpg);
+  background-image: url(../img/features-bg.webp);
   background-size: cover;
+  background-position: bottom;
 
-  transform: skewY(-7deg);
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom,
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary-dark, 0.7));
+  }
+
+  transform: skewY(-5deg);
   margin-top: -10rem;
 
   &>* {
-    transform: skewY(7deg);
+    transform: skewY(5deg);
   }
 
   @include respond(tab-port) {
@@ -78,7 +88,7 @@
       rgba($color-white, 0.9) 0%,
       rgba($color-white, 0.9) 50%,
       transparent 50%),
-    url(../../img/nat-10.jpg);
+    url(../../img/book.jpg);
   background-size: cover;
   border-radius: $default-border-radius;
   box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.2);
@@ -88,14 +98,14 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 65%,
         transparent 65%),
-      url(../../img/nat-10.jpg);
+      url(../../img/book.jpg);
   }
 
   @include respond(tab-port) {
     background-image: linear-gradient(to right,
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%),
-      url(../../img/nat-10.jpg);
+      url(../../img/book.jpg);
   }
 
   &__form {
