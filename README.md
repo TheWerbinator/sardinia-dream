@@ -1,10 +1,10 @@
-# Sardinia Dream — Luxury Travel & Villa Portfolio
+# Sardinia Dream — Luxury Seafaring Portfolio
 
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![Sass](https://img.shields.io/badge/Sass-1.88+-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-A high-performance, visually immersive landing platform showcasing luxury holiday villas, custom booking forms, backgrounds, and real images gatherd from private boating experiences across Sardinia. 
+A high-performance, visually immersive landing platform showcasing luxury island stays, custom booking forms, backgrounds, and real images gathered from private boating experiences across Sardinia. 
 
 This platform prioritizes raw speed, eliminating modern framework overhead by pairing a lightning-fast **Vite** bundler with a scalable, production-grade **7-1 Sass layout engine** and vanilla ES6+ JavaScript components.
 
@@ -52,7 +52,7 @@ The stylesheets follow the industry-standard **7-1 Pattern**, managing visual as
 │   │   ├── _bg-video.scss   # Hero background video styling
 │   │   ├── _book.scss       # Booking section UI
 │   │   ├── _button.scss     # Global button designs & hover states
-│   │   ├── _card.scss       # Villa & experience display cards
+│   │   ├── _card.scss       # Experience display cards
 │   │   ├── _composition.scss# Image layout clusters
 │   │   ├── _feature-box.scss# Highlights & selling points layout
 │   │   ├── _form.scss       # Input fields & custom validation states
