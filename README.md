@@ -128,3 +128,4 @@ When your adjustments are ready for production, execute the build pipeline:
 ```bash
 npm run build
 ```
+Vite will compile and package your elements down into a deployment bundle inside the `/dist` folder. This project is static and serverless, making it fully ready for direct deployment to CDNs and edge layers such as Vercel, Netlify, or GitHub Pages by targeting that output directory.
